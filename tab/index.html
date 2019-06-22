@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>tab test</title>
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+</head>
+<body>
+<!-- 	<div id="tabs">
+		<tabs v-model="activeKey">
+			<pane label="标签1" name="1">
+				标签1的内容
+			</pane>
+			<pane label="标签2" name="2">
+				标签2的内容
+			</pane>
+			<pane label="标签3" name="3">
+				标签3的内容
+			</pane>
+		</tabs>
+	</div> -->
+
+
+
+
+	<div id="tabs">
+		<tabs v-model="activeKey">
+			<pane label="标签1" name="1">
+				标签1的内容
+			</pane>
+			<pane label="标签2" name="2">
+				标签2的内容
+			</pane>
+			<pane label="标签3" name="3">
+				标签3的内容
+			</pane>
+		</tabs>
+	</div>
+<script type="text/javascript" src="../js/vue.min.js"></script>
+<script type="text/javascript" src="./tab.js"></script>
+<script type="text/javascript">
+new Vue({
+	el: '#tabs',
+	data: {
+		activeKey: '1'
+	},
+	created: function () {
+	}
+})
+</script>
+</body>
+</html>
